@@ -27,8 +27,8 @@ const HomePage = async () => {
           {data?.map((dt) => (
             <Card key={dt.id} variant="outlined" className="mb-2 bg-gray-50 hover:bg-gray-200">
               <CardContent className="flex items-center justify-between">
-                <Link href={`/detailBlog/${dt.id}`}>
-                  <Typography variant="h7" className="flex-1">
+              <Link href={`/detailBlog/${dt.id}`}>
+                  <Typography variant="h7"  className="flex-1" >
                     {dt.title}
                   </Typography>
                 </Link>

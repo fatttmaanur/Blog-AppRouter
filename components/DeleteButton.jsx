@@ -1,3 +1,6 @@
+
+'use client';
+
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 
 const deleteBlog = async (id) => {

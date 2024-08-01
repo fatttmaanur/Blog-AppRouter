@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import Head from 'next/head';
@@ -38,15 +40,15 @@ const CreateNewBlog = () => {
 
   return (
     <>
-      <Head>
+     <Head>
         <title>Create Blog</title>
-        <meta name="description" content="Create a new blog post" />
+        <meta name="description" content="Blog details page" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className="min-h-screen flex flex-col items-center justify-center p-4 bg-gray-100">
         <form onSubmit={handleSubmit} className="w-full max-w-md p-4 border rounded bg-gray-50">
           <div className="mb-4">
-            <label className="block text-gray-600">Title</label>
+            <label className="block text-gray-600">Name</label>
             <input
               type="text"
               value={title}
@@ -56,11 +58,11 @@ const CreateNewBlog = () => {
             />
           </div>
           <button type="submit" className="p-2 bg-blue-600 text-white rounded hover:bg-blue-500">
-            Add New Blog
+              AddNewBlog
           </button>
         </form>
       </main>
-    </>
+    </>   
   );
 };
 
