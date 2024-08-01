@@ -1,10 +1,9 @@
+import './globals.css'; 
 import Head from 'next/head';
 import Link from 'next/link';
 import DeleteButton from '../components/DeleteButton';
 import { Card, CardContent, Typography, Button, Box } from '@mui/material';
 import { getData } from '../lib/fetchData';
-import './globals.css'; 
-
 
 const HomePage = async () => {
   const data = await getData();
