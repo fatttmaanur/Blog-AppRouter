@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { useParams } from 'next/navigation';  // Doğru import
+import { useParams } from 'next/navigation'; 
 import Head from 'next/head';
 
 const fetchBlog = async (id) => {
@@ -25,7 +25,7 @@ const updateBlog = async (data) => {
 };
 
 export default function Detail() {
-  const { id } = useParams();  // Dinamik rota parametresini alma
+  const { id } = useParams();  
   const queryClient = useQueryClient();
   const [isEditing, setIsEditing] = useState(false);
   const [title, setTitle] = useState('');
