@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import Head from 'next/head';
+import '../globals.css'; 
 
 const insertBlog = async (newBlog) => {
   const res = await fetch('https://fakestoreapi.com/products', {

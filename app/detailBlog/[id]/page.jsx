@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { useParams } from 'next/navigation'; 
 import Head from 'next/head';
+import '../../globals.css'; 
 
 const fetchBlog = async (id) => {
   if (!id) throw new Error('No ID provided');

@@ -19,6 +19,8 @@ export default function DeleteButton({ id }) {
     mutationFn: () => deleteBlog(id),
     onSuccess: () => {
       queryClient.invalidateQueries(['blogs']);
+      console.log(`Blog with id ${id} deleted successfully`);
+
     },
   });
 
